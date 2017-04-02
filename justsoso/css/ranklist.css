@@ -1,0 +1,34 @@
+body{
+	height: 1126px;
+}
+
+.main_page{
+    height: 950px;
+    width:1200px;
+    margin:0 auto 0 auto;
+    padding-top: 40px;
+    color: #181818;
+}
+
+
+.panel-default_ranklist{
+	text-align: center;
+	width: 900px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align: center;
+}
+
+
+.panel-default
+{
+	text-align: center;
+	width: 900px;
+	margin-left:150px;
+	margin-right:150px;
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align: center;
+}

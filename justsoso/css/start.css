@@ -1,0 +1,39 @@
+.main_page{
+    height: 2000px;
+}
+body{
+    height: 2100px;
+}
+
+ 
+
+.panel-default
+{
+    /*text-align: center;*/
+    width: 900px;
+    margin-left:215px;
+    /*margin-right:100px;*/
+    margin-top:20px;
+    margin-bottom:20px;
+    color: #001450
+}
+
+.content{
+    float: left;
+    margin-left: 475px;
+    color: #001450;
+}
+
+.navbar-nav > li > a {
+    margin-bottom:-35px;
+}
+
+
+.Jtitle{
+    width: 600px;
+    font-size:28px;
+    color:#001450;
+    margin-left:600px;
+    margin-top: 300px;
+
+}

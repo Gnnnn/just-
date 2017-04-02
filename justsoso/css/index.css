@@ -1,0 +1,124 @@
+.main_page{ 
+    height: 1648px;
+    width:1200px;
+    margin:0 auto 0 auto;
+    padding-top: 100px;
+}
+
+.Jtitle{
+    width: 1200px;
+    text-align:center;
+    font-size:28px;
+    color:#181818
+
+}
+
+a.more{
+    border-color: #181818;
+    border-radius: 5px;
+}
+
+p.start_more{
+    text-align:center;
+    font-size:18px;
+    font-family: "微软;雅黑",Arial,Helvetica,sans-serif;
+    color:#181818
+}
+
+.theme-popover h3{
+    color: #181818;
+}
+    
+.main{
+    position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+
+.Gnlog:hover{
+    background: black;
+}
+.Gnregister:hover{
+    background: black;
+}
+
+
+.main-title1:hover {
+    font-weight: bold;
+    color: black;
+  text-decoration:none;
+}
+
+.main-title:hover {
+    font-weight: bold;
+    color: black;
+  text-decoration:none;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+.justsoso {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  font-size: 4em;
+  font-family: "Algerian","微软雅黑";
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.demo-1 .justsoso {
+  text-transform: uppercase;
+  font-size: 7.2em;
+  letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo-1 .justsoso {
+    font-size: 7.2em;
+  }
+}
+
+ 
+ul.a {
+  list-style-type:square;
+}
+
+li.b
+{
+    text-align:left;
+    font-size:18px;
+    font-family: 微软雅黑,Arial,Helvetica,sans-serif;
+    color:#181818
+
+}
+p.c
+{
+    font-size:16px;
+    font-family: 微软雅黑,Arial,Helvetica,sans-serif;
+    color:#181818
+}
+
+#text{
+  color: #181818;
+  width: 800px;
+  margin-left: 210px;
+  list-style-type:decimal;
+  line-height: 41px;
+}
+
+
+.smalltitle{
+  color: #181818;
+  font-size: 24px;
+}

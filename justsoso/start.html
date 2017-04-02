@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <title>Just搜搜信息检索大赛</title>
+    <link rel="shortcut icon" href="picture/favicon.ico">
+    <link type="text/css" rel=" stylesheet" href="css/bootstrap.min.css" />
+    <link type="text/css" rel=" stylesheet" href="css/genal.css" />
+    <link type="text/css" rel=" stylesheet" href="css/start.css" />
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/animation.js"></script> -->
+    <script type="text/javascript" src="js/start.js"></script>
+    <script type="text/javascript" src="js/portamento.js"></script>
+
+    <script type="text/javascript">
+    var timerID,timerID2;
+    // timerID = setTimeout("alert('Time out!')",2000);
+    // timerID2 = setTimeout("javascript:location.href='/start_over.html'",3000);
+    $(function(){
+    var $backToTopTxt = "返回顶部", $backToTopEle = $('<div class="backToTop"></div>').appendTo($("body"))
+    .text($backToTopTxt).attr("title", $backToTopTxt).click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 120);
+    }), 
+    $backToTopFun = function() {
+    var st = $(document).scrollTop(), winh = $(window).height();
+    (st > 0)? $backToTopEle.show(): $backToTopEle.hide();
+    //IE6下的定位
+    if (!window.XMLHttpRequest) {
+    $backToTopEle.css("top", st + winh - 166);
+    }
+    };
+    $(window).bind("scroll", $backToTopFun);
+    $(function() { $backToTopFun(); });
+    });
+    </script>
+    <style>
+    /*返回顶部*/
+    .backToTop {display: none; width: 18px; line-height: 1.2; padding: 5px 0; background-color: #000; color: #fff; font-size: 12px; text-align: center; position: fixed; _position: absolute; right: 10px; bottom: 100px; _bottom: "auto"; cursor: pointer; opacity: .6; filter: Alpha(opacity=60);}
+    </style>
+</head>
+<body>
+    <div class="header-bg"></div>
+    <div class="header">
+        <a id="page-title-pic" href="/index.html">
+        <img src="picture/dede.png" alt="icon" style="width: 50px;">
+        </a>
+        <a class="nav-tag" href="/more.html">比赛须知</a>
+        <a class="account-alink" href="/index.html"></a>
+        <!-- <a class="user_account" href="/user.html">个人中心</a> -->
+    </div>
+    <!--↓↓↓↓↓↓↓主体部分↓↓↓↓↓↓↓-->
+    <div class="main_page">
+    <p class="Jtitle hide"></p>
+    <div class="panel panel-default">
+    <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus0"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio0" value="0"><span class="qus00">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio0" value="1"><span class="qus01">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio0" value="2"><span class="qus02">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio0"  value="3"><span class="qus03"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus1"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio1" value="0"><span class="qus10">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio1" value="1"><span class="qus11">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio1" value="2"><span class="qus12">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio1"  value="3"><span class="qus13"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus2"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio2" value="0"><span class="qus20">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio2" value="1"><span class="qus21">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio2" value="2"><span class="qus22">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio2"  value="3"><span class="qus23"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus3"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio3" value="0"><span class="qus30">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio3" value="1"><span class="qus31">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio3" value="2"><span class="qus32">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio3"  value="3"><span class="qus33"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus4"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio4" value="0"><span class="qus40">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio4" value="1"><span class="qus41">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio4" value="2"><span class="qus42">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio4"  value="3"><span class="qus43"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus5"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio5" value="0"><span class="qus50">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio5" value="1"><span class="qus51">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio5" value="2"><span class="qus52">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio5"  value="3"><span class="qus53"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus6"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio6" value="0"><span class="qus60">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio6" value="1"><span class="qus61">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio6" value="2"><span class="qus62">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio6"  value="3"><span class="qus63"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus7"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio7" value="0"><span class="qus70">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio7" value="1"><span class="qus71">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio7" value="2"><span class="qus72">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio7"  value="3"><span class="qus73"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus8"> 第 1 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio8" value="0"><span class="qus80">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio8" value="1"><span class="qus81">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio8" value="2"><span class="qus82">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio8"  value="3"><span class="qus83"> D.4XX               </span></label>
+            </div>
+            
+        </td>
+        </tr>
+        </tbody>
+        <table class="table table-hover">
+        <tbody>
+        <tr>
+        <td class="qus9"> 第 10 题： XXXXXXXXXXXXXXXXXX？</td>
+        </tr>
+        <tr>
+            <td>
+            <div class="radio">
+                <label>
+                <input type="radio" name="radio9" value="0"><span class="qus90">A.1XX </span>                     </label>
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio" name="radio9" value="1"><span class="qus91">B.2XX                  </span>  </label>
+            </div>
+            <div class="radio">
+                <label>
+                <input type="radio"  name="radio9" value="2"><span class="qus92">C.3XX   </span>  </label>
+
+            </div>
+            <div class="radio">
+               <label>
+                <input type="radio"  name="radio9" value="3"><span class="qus93"> D.4XX               </span> </label>
+            </div>
+            <input type="button" class="btn btn-primary" id="u1" value="提交答案" />
+            <input type="button" class="btn btn-primary" id="u2" value="提交答案" />
+            <input type="button" class="btn btn-primary" id="u3" value="提交答案" />
+        </td>
+        </tr>
+        </tbody>
+    </table>
+    <ul class="pagination">
+        <li><a class="page1" href="javascript:;">第一页</a></li>
+        <li><a class="page2" href="javascript:;">第二页</a></li>
+        <li><a class="page3" href="javascript:;">第三页</a></li>
+        <li><a class="leave hide" href="javascript:;">交卷离场</a></li>
+    </ul>
+    </div>
+    </div>
+    <!--↑↑↑↑↑↑↑主体部分↑↑↑↑↑↑↑-->
+    <div class="footer-bg">
+        <div id="footer-bg1"></div>
+        <div id="footer-bg2"></div>
+    </div>
+    <div class="footer-bar">
+        <div id="footer-bar1">
+                <div class="footer-info" ><div>主办方：</div><span>上海大学计算机工程与科学学院 &nbsp; 上海大学社区学院  &nbsp;上海大学图书馆 &nbsp;上海大学学生工作办公室</span></div>
+        </div>
+        <div id="footer-bar2">
+                <span class="copyright">Copyright &copy;SHU-CES_Lilith</span>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+   <ul class="nav navbar-nav">
+    <li><a>Copyright©npa&Gnlilith<span class="space"></span> || 技术支持：SHU-计算机学院学术部
+    <span class="space"></span> || 
+    <span id="time">倒计时：<div class="content"><a id="time_d">!</a>天<a id="time_h">!</a>时<a id="time_m">!</a>分<a id="time_s">!</a>秒</div> 
+    </span></a></li>
+   </ul>
+</nav>
+</body>
+</html>
